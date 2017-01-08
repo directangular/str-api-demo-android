@@ -86,6 +86,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void refreshItems() {
+        /// TODO: Paging
+
         mListItems.clear();
         mListItemsAdapter.notifyDataSetChanged();
 
