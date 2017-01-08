@@ -34,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<String> mListItems = new ArrayList<>();
     private ArrayAdapter<String> mListItemsAdapter;
     private RequestQueue mRequestQueue;
-    private final String STR_URL = "http://192.168.1.106:8000";
+    private final String STR_URL = "https://beta.shoptheroe.com";
     private final String API_URL = STR_URL + "/api/v2";
     private final String TAG = "STR-API-DEMO";
-    private final String CLIENT_ID = "6oUrhFhLqjnt6Rlt7cyldO1UuxyL8dEGag7ME1sZ";  // YOUR CLIENT_ID HERE
+    private final String CLIENT_ID = "ygTJH32UD6RigEJ3Guzk6ek0yYtum2ZgZQVuTODT";  // YOUR CLIENT_ID HERE
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
