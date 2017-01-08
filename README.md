@@ -12,7 +12,7 @@ when requesting authorization.  The URL looks like this:
 https://beta.shoptheroe.com/o/authorize/?response_type=token&client_id=<client_id>&state=random_state_string&redirect_uri=str-api-demo://cb
 ```
 
-Take a look at the `redirect_uri`.  That's a custom schema that we register
+Take a look at the `redirect_uri`.  That's a custom scheme that we register
 with Android by adding the following to our `AndroidManifest.xml`:
 
 ```xml
@@ -24,10 +24,10 @@ with Android by adding the following to our `AndroidManifest.xml`:
 </intent-filter>
 ```
 
-Then, when the system tries to visit a link with that schema (which is what
+Then, when the system tries to visit a link with that scheme (which is what
 happens when the authorization request completes successfully) your app
 will be invoked.  You can tell that it was invoked through the custom
-schema by looking at the intent action.  We do that in `onCreate`:
+scheme by looking at the intent action.  We do that in `onCreate`:
 
 ```java
 Intent intent = getIntent();
@@ -53,8 +53,8 @@ public Map<String, String> getHeaders() throws AuthFailureError {
 }
 ```
 
-## Custom URI schema limitations
+## Custom URI scheme limitations
 
-Currently the only custom URI schema that the STR backend supports is
-`str-api-demo`.  You can request your own schema to be registered by
+Currently the only custom URI scheme that the STR backend supports is
+`str-api-demo`.  You can request your own scheme to be registered by
 contacting Directangular support.
