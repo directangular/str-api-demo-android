@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                     for (int i = 0; i < results.length(); ++i) {
                         JSONObject item = results.getJSONObject(i);
                         int itemId = item.getInt("pk");
-                        String style = item.getString("style");
+                        String style = item.getString("itemchoice");
                         String size = item.getString("size");
                         String link = item.getString("listingLink");
                         link = link == null ? "" : link;
