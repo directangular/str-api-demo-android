@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Uri uri = intent.getData();
         String qstring = uri.getFragment();
+        Log.i(TAG, "Got fragment: " + qstring);
         // We have just a query string, but Uri.parse needs a full URL, so just throw a bogus host
         // on there.  There's probably a better way of doing this...
         uri = Uri.parse("http://example.com/?" + qstring);
