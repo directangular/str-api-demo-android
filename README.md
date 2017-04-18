@@ -3,6 +3,13 @@ API.
 
 # Important stuff
 
+Remember that this is _proof of concept_ code.  You should *not* carry over
+any of the following patterns to your app:
+
+- Not handling paging.
+
+- Not handling errors.
+
 ## Getting the token
 
 Since this is a mobile app you'll need to use the `token` response type
